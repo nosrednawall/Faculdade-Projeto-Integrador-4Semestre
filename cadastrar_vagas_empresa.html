@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head> <!-- Inicio do cabeçalho -->
+
+	<link rel="stylesheet"  href="_css/header.css" >
+	<link rel="stylesheet"  href="_css/estilo.css" > <!-- Estilo CSS do do site -->
+
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8" />
+
+	<title>Trabalhe Conosco</title> <!-- Título da página -->
+
+</head> <!-- Fim do cabeçalho -->
+
+<body> <!-- Começo do Body -->
+<article id="site">
+    <header>
+      <h1 class="float-l">
+        <a href="#" title="Trabalhe Conosco" > Trabalhe Conosco </a>
+      </h1>
+
+      <input type="checkbox" id="control-nav" />
+      <label for="control-nav" class="control-nav"></label>
+      <label for="control-nav" class="control-nav-close"></label>
+
+        <nav class="float-r">
+        <ul class="list-auto">
+          <li>
+            <a href="#Candidato" onclick="location.href='area_candidato.html'" title="Candidado">Candidato</a>
+          </li>
+          <li>
+            <a href="#Empresa" onclick="location.href='area_empresa.html'" title="Empresa">Empresa</a>
+          </li>
+          <li>
+            <a href="#Sobre nós" onclick="location.href='sobre_nos.html'" title="Sobre nós">Sobre nós</a>
+          </li>
+          <li>
+            <a href="#Contato" onclick="location.href='contato.html'" title="Contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+	<article id="conteudo" class="center">	
+		</br>	
+		<h2>Cadastro de vagas</h2>	
+	
+		<form id="css_cadastrar-vaga" name="php_cadastrar-vaga">
+			</br>
+			
+			<label for="css_tipo-de-vaga">Tipo</label>
+			<select id="css_tipo-de-vaga" name="php_tipo-de-vaga">
+				<optgroup label="Estágio">
+					<option value="estagio-programador">Programador</option>
+					<option value="estagio-auxiliar-ti">Auxiliar TI</option>
+				</optgroup>
+				<optgroup label="Emprego formal">
+					<option value="programador-pleno">Programador Pleno</option>
+					<option	value="suporte-ti">Suporte TI</option>
+				</optgroup>
+			</select>
+			
+			</br></br>
+			
+			<label for="css_descricao-vaga" >Descrição da vaga</label> </br>
+			<textarea id="css_descricao-vaga" for="php_descricao-vaga" placeholder="limite de 500 caracteres" cols="60" rows="9" maxlength="500"></textarea>
+			
+			</br></br>
+			
+			<label for="css_quantidade-vaga">Quantidade de vagas</label>
+			<input type="number" id="css_quantidade-vaga" name="php_quantidade-vaga" placeholder="Máximo 10 vagas" min="1" max="10" /> <!-- verificar opcao enter aceita e pula linha -->
+			
+			</br></br>
+			
+			<!-- php aqui iremos importar uma lista das perguntas criadas pela empresa, ou de perguntas précriadas 
+			<input list="perguntas-empresa">
+				<datalist id="css_perguntas-empresa">
+					<option value="pergunta-1">Aqui irá aparecer a pergunta 1, vamos ter que aprender!</option>
+					<option value="pergunta-2">Aqui irá aparecer a pergunta 2, vamos ter que aprender!</option>
+					<option value="pergunta-3">Aqui irá aparecer a pergunta 3, vamos ter que aprender!</option>
+					<option value="pergunta-4">Aqui irá aparecer a pergunta 4, vamos ter que aprender!</option>
+				</datalist>
+				
+			-->
+			<label for="css_numero-pergunta">Pergunta</label>
+			<input type="number" id="css_numero-pergunta" name="php_numero-pergunta" placeholder="Escolha o número referente a sua pergunta" min="1" max="10" /> 
+			
+			</br></br></br>
+			<input type="submit" name="php_cadastrar-vaga" onclick="alert('A sua vaga foi criada com sucesso!') "/>
+			<button type="button" name="php_voltar" onclick="location.href='cadastrar_vagas.html'">Voltar</button>
+			
+		</form>
+		
+	</article>
+
+
+</article>
+
+    <footer>
+
+      <p>Trabalhe Conosco Todos os direitos Reservados 2017</p>
+
+    </footer>
+
+</body>
+</html>

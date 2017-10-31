@@ -1,0 +1,49 @@
+/*
+include_once("conexao.php");
+
+echo "entrou no arquivo";
+
+if (!empty($_POST)) {
+$nome_contatoErro = null;
+$nome_empresaErro = null;
+$email_empresaErro = null;
+$motivo_contatoErro = null;
+
+$nome_contato = $_POST['php_nomecontatoempresa'];
+$nome_empresa =	$_POST['php_nomeempresa'];
+$email_empresa	=	$_POST['php_emailempresa'];
+$motivo_contato	=	$_POST['php_motivocontato'];
+
+$validacao = true;
+
+if (empty($nome_contato)) {
+	$nome_contatoErro = 'Por favor digite um nome para contato!';
+	$validacao = false;
+}
+if (empty($nome_empresa)) {
+	$nome_empresaErro = 'Por favor digite o nome de vossa empresa!';
+	$validacao = false;
+}
+if (empty($email_empresa)) {
+	$email_empresaErro = 'Por favor digite o e-mail de vossa empresa!';
+	$validacao = false;
+}
+if (empty($motivo_contato)) {
+	$motivo_contatoErro = 'Por favor digite o motivo de entrar em contato conosco';
+	$validacao = false;
+}
+
+//inserindo os dados no banco
+if ($validacao) {
+	$pdo = Banco::conectar();
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $sql = "INSERT INTO FUTURO_PARCEIRO (php_nomecontatoempresa, php_nomeempresa, php_emailempresa, php_motivocontato) VALUES(?,?,?,?,?)";
+  $q = $pdo->prepare($sql);
+  $q->execute(array($nome_contato,$nome_empresa,$email_empresaErro,$motivo_contatoErro));
+  Banco::desconectar();
+  header("Location: index.php");
+echo "enviando arquivos";
+}
+}
+
+*/
