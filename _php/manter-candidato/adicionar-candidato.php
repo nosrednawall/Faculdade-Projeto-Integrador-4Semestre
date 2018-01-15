@@ -4,7 +4,7 @@
 ////////////adiciona o arquivo de conexao a esse aquivo/////
 /////////////////////////////////////////////////////////*/
 include_once("../conexao.php");
-echo "<script type='text/javascript'>alert('antesDoIf');</script>";
+//echo "<script type='text/javascript'>alert('antesDoIf');</script>";
 
 /*///////////////////////////////////////////////////////////
 ////////////adiciona o arquivo de conexao a esse aquivo/////
@@ -32,8 +32,11 @@ echo "<script type='text/javascript'>alert('antesDoIf');</script>";
 	$php_emailcandidato = $_POST['php_emailcandidato'];
 	$php_escolaridade =  $_POST['php_escolaridade'];
 	$php_linguas = $_POST['php_linguas'];
-	$php_areapretendida = $_POST['php_areapretendida'];
-	$php_senha = crypt("salt", $_POST['php_senha']);
+	$php_idprofissao = $_POST['php_profissao'];
+	$php_senha = $_POST['php_senha'];
+	$php_status = $_POST['php_status'];
+
+
 
 /*///////////////////////////////////////////////////////////
 ////////////verificando se as variáveis estão vazias////////
@@ -99,33 +102,33 @@ echo "<script type='text/javascript'>alert('antesDoIf');</script>";
         if(empty($php_senha)) {
 			echo "<font color='red'>O campo senha está vazio.</font><br/>";
 		}
-		
+
 		//link to the previous page
-		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+		//echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	}
 	//else {
 		// if all the fields are filled (not empty)
-		
+
 /*///////////////////////////////////////////////////////////
 ////////////enviando dados ao servidor//////////////////////
-/////////////////////////////////////////////////////////*/		
-		
-echo "<script type='text/javascript'>alert('antes do sql');</script>";
+/////////////////////////////////////////////////////////*/
 
-$result = mysqli_query($mysqli, "INSERT INTO CANDIDATO(NOME,NOME_SOCIAL,CPF,RG,
+//echo "<script type='text/javascript'>alert('antes do sql');</script>";
+
+$result = mysqli_query($mysqli, "INSERT INTO CANDIDATO(ID_CANDIDATO,NOME,NOME_SOCIAL,CPF,RG,
 	DATA_NASCIMENTO,SEXO,ESTADO_CIVIL,QTD_FILHOS,CNH,CEP,ENDERECO,NUMERO_CASA,
 	COMPLEMENTO,BAIRRO,CIDADE,ESTADO,PAIS,TEL_CELULAR,TEL_RESIDENCIAL,TEL_RECADO,EMAIL,
-	ESCOLARIDADE,LINGUAS,AREA_PRETENDIDA,SENHA_CANDIDATO)
-	VALUES('$php_nomecandidato','$php_nomesocial','$php_cpfcandidato','$php_rgcandidato',
+	ESCOLARIDADE,LINGUAS,ID_PROFISSAO,SENHA_CANDIDATO,STATUS)
+	VALUES(NULL,'$php_nomecandidato','$php_nomesocial','$php_cpfcandidato','$php_rgcandidato',
 		'$php_datanascimento','$php_sexo','$php_estadocivil','$php_qtdafilhos','$php_cnh',
 		'$php_cepcandidato','$php_enderecocandidato','$php_numeroendereco','$php_complemento',
 		'$php_bairro','$php_cidade','$php_estado','$php_pais','$php_celular','$php_tel_residencial',
-		'$php_tel_recado','$php_emailcandidato','$php_escolaridade','$php_linguas','$php_areapretendida','$php_senha')");
+		'$php_tel_recado','$php_emailcandidato','$php_escolaridade','$php_linguas','$php_idprofissao','$php_senha','$php_status')");
 		//display success message
-		echo "<font color='green'>Data added successfully.";
-		echo "<br/><a href='../../index.php'>View Result</a>";
-	//}
+		//echo "<font color='green'>Data added successfully.";
+		//}
 //}
-echo "<script type='text/javascript'>alert('depois do sql');</script>";
-echo "<script type='text/javascript'>alert('$php_escolaridade');</script>";
+//echo "<script type='text/javascript'>alert('depois do sql');</script>";
+//echo "<script type='text/javascript'>alert('$php_escolaridade');</script>";
+header("Location:../../index.php");
 ?>

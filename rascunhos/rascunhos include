@@ -1,4 +1,29 @@
-/*
+<?php
+$id_empresa = $res['ID_EMPRESA'];
+$razao_social = $res['RAZAO_SOCIAL'];
+$email_empresa = $res['EMAIL'];
+$cnpj = $res['CNPJ'];
+$email_empresa	=	$res['EMAIL'];
+$nome_fantasia = $res['NOME_FANTASIA'];
+$telefone = $res['TELEFONE_COMERCIAL'];
+$cep = $res['CEP'];
+$endereco = $res['ENDERECO'];
+$numero_empresa = $res['NUMERO_EMPRESA'];
+$complemento = $res['COMPLEMENTO'];
+$bairro = $res['BAIRRO'];
+$cidade = $res['CIDADE'];
+$estado = $res['ESTADO'];
+$pais = $res['php_pais'];
+$site = $res['PAIS'];
+$senha = $res['SENHA_EMPRESA'];
+
+
+
+
+?>
+
+/
+*
 include_once("conexao.php");
 
 echo "entrou no arquivo";

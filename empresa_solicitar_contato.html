@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:id="http://www.w3.org/1999/xhtml">
+<head> <!-- Inicio do cabeçalho -->
+	<link rel="stylesheet"  href="_css/bootstrap.min.css" >
+	<link rel="stylesheet"  href="_css/header.css" >
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8" />
+	<title>Trabalhe Conosco</title> <!-- Título da página -->
+</head> <!-- Fim do cabeçalho -->
+<body> <!-- Começo do Body -->
+	<!-- INICIO DO HEADER PERSONALIZADO, PORÉM COM A CLASSE CONTEINER DO BOOTSTRAP-->
+	<header class="container">
+		<h1 class="float-l">
+			<a href="#" title="Trabalhe Conosco" onclick="location.href='index.php'"> Trabalhe Conosco </a>
+		</h1>
+
+		<input type="checkbox" id="control-nav" />
+		<label for="control-nav" class="control-nav"></label>
+		<label for="control-nav" class="control-nav-close"></label>
+
+			<nav class="float-r">
+			<ul class="list-auto">
+				<li>
+					<a href="#Candidato" onclick="location.href='candidato_area_nao_logada.php'" title="Candidado">Candidato</a>
+				</li>
+				<li>
+					<a href="#Empresa" onclick="location.href='empresa_area_nao_logada.php'" title="Empresa">Empresa</a>
+				</li>
+				<li>
+					<a href="#Sobre nós" onclick="location.href='sobre_nos.php'" title="Sobre nós">Sobre nós</a>
+				</li>
+				<li>
+					<a href="#Contato" onclick="location.href='contato.php'" title="Contato">Contato</a>
+				</li> <!--/li -->
+			</ul> <!--/ul -->
+		</nav> <!-- /nav-->
+	</header> <!-- /HEADER-->
+	<div class="jumbotron">
+		<br>
+		<div class="container">
+			<h2>Obrigado por querer ser um parceiro nosso!</h2>
+			<p>Por favor preencha os os campos abaixo, para que podermos lhe atender o mais breve possível</p>
+		</div> <!--/container -->
+	</div> <!--jumbotron -->
+
+	<div class="container">
+		<form method="post" id="fSolicitacao_contato" action="_php/manter-empresa/adiciona_futuro_parceiro.php">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-8">
+					<fieldset id="empresa"><legend>Solicitando Cadastro</legend>
+						<label for="css_nomeContatoEmpresa">Nome para contato</label>
+						</br>
+						<input type="text" name="php_nome_contato_empresa" id="css_nomeContatoEmpresa" size="20" maxlength="50" placeholder="Nome completo">
+		        <br>
+		        <label for="css_emailEmpresa">E-mail</label>
+						</br>
+						<input type="email" name="php_email_empresa" id="css_emailEmpresa" size="20" maxlength="50" placeholder=""/>
+						</br>
+						<label for="css_nome-empresa">Nome da empresa</label>
+						</br>
+						<input type="text" name="php_nome_empresa" id="css_nome-empresa"	size="20" maxlength="120" placeholder="Insira o nome juridico de vossa empresa">
+						</br><br>
+						<label for="cDescricao">Porfavor nos informe os motivos de entrar em contato conosco!</label>
+						</br>
+						<textarea	id="cDescricao"	name="php_motivo_contato"	maxlength="500"	placeholder="Máximo 500 caracteres"	cols="30"	rows="9"></textarea>
+						</br>
+					</fieldset>
+					<br>
+					<input value="Enviar" type="submit" onclick="alert('Seus dados foram enviados com sucesso!')"/>
+					<input type="reset" value="Limpar" />
+					<input type="button" value="Voltar" onclick="href="empresa_area_nao_logada.php"" />
+				</div> <!--/col -->
+			</div> <!--/row -->
+		</form> <!-- fim do form-->
+	</div> <!-- fim da div-->
+
+				<footer class="footer">
+					<hr>
+				 	<div class="container">
+				 		<p class="text-muted">&copy; 2017 Trabalhe Conosco todos os direitos reservados</p>
+				  </div>
+				</footer>
+				    <!-- Bootstrap core JavaScript
+				  ================================================== -->
+				  <!-- Placed at the end of the document so the pages load faster -->
+				  <script href="js/jquery.js"></script>
+				  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+				  <script href="js/bootstrap.js"></script>
+				  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+				  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+				  </body>
+				  </html>

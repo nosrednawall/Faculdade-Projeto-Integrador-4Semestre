@@ -13,6 +13,9 @@
 	/* right : posição de direita */
 	margin-right:auto;
 	/* Aqui definiremos a cor de fundo da página */
+	background-color: whitesmoke;
+	background-size:contain;
+	background-repeat: no-repeat;
 }
 
 #header{
@@ -48,9 +51,9 @@ footer{
 	/* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
 	float:left;
 	/* Cor de fundo da div */
-
+	
 	border: 5px groove gray;
-
+	
 	}
 
 	#conteudo-right{
@@ -62,9 +65,9 @@ footer{
 automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
 	float:left;
 	/* Cor de fundo da div */
-
+	
 	border: 5px groove gray;
-
+	
 	}
 	#conteudo-center{
 	/*Novamente definimos a largura da div*/
@@ -75,9 +78,9 @@ automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, 
 automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
 	float:left;
 	/* Cor de fundo da div */
-
+	
 	border: 5px groove gray;
-
+	
 	}
 #cLogin-empresa{
 	border:1px solid gray;
@@ -86,94 +89,9 @@ automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, 
 }
 
 .center {
-    height: 150px;
-		width: 200px;
+    height: 15px;
     text-align: center;
 }
 
-fieldset {
-    display: block;
-    margin-left: 60px;
-    margin-right: 2px;
-    padding-top: 10px;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-		height: auto;
-    border: 2px groove;
-		width: auto;
-}
-
-#css_formulario-candidato {
-		border: 2px groove;
-
-}
-
-input, textarea { margin-left: 140px; }
-
-.input-formulario{
-		caret-color: red;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow: 1px 1px 2px #777777;
-    -moz-box-shadow: 1px 1px 2px #777777;
-    -webkit-box-shadow: 1px 1px 2px #777777;
-    background: #eeeeee;
-    border:1px solid #000000;
-    width:150px
-		padding:10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		margin-top: -10px;
-		margin-bottom: 20px;
-}
-
-input[type=text]:hover, textarea:hover{
-         background: #ffffff; border:1px solid #990000;
-}
-
-input[type=text]:hover, textarea:hover{
-         background: #ffffff; border:1px solid #990000;
-}
-
-input[type=submit]{
-        background:#006699;
-        color:#ffffff;
-}
 
 
-
-textarea{
-		position: relative;
-    border: 1px solid #000000;
-    background:#eeeeee;
-    width:350px;
-    height:200px;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow: 1px 1px 2px #333333;
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
-}
-
-label {
-	 position: absolute; text-align:right; width:130px;
- }
-label.check, label.radio { position:relative; text-align:left; }
-
-input[radio]{
-	margin-left: 140px;
-
-}
-#cLogin-empresa {
-
-
-}
-/*
-
-
-
-
-*/

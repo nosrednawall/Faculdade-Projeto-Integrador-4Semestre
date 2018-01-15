@@ -1,0 +1,179 @@
+#site{
+	/* Definimos a largura da página */
+	width:auto;
+	/* Definirmos a altura da página*/
+	height:700px;
+	/* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+	/*top : posição de cima */
+	margin-top:60px;
+	/* left: posição de esquerda*/
+	margin-left:auto;
+	/* bottom : posição de baixo */
+	margin-bottom:0;
+	/* right : posição de direita */
+	margin-right:auto;
+	/* Aqui definiremos a cor de fundo da página */
+}
+
+#header{
+	/*Novamente definimos a largura da div*/
+	width:1000px;
+	/* altura da div */
+	height:100px;
+	/* Cor de fundo da div */
+	background-color:#00F;
+	}
+
+#conteudo{
+	/*Novamente definimos a largura da div*/
+	width: auto;
+	/* altura da div */
+	height:auto;
+	/* Cor de fundo da div */
+
+
+}
+footer{
+	/*Novamente definimos a largura da div*/
+	width:1000px;
+	/* altura da div */
+	height:100px;
+	/* Cor de fundo da div */
+
+	}
+#conteudo-left {	/*Novamente definimos a largura da div*/
+	width:500px;
+	/* altura da div */
+	height:400px;
+	/* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+	float:left;
+	/* Cor de fundo da div */
+
+	border: 5px groove gray;
+
+	}
+
+	#conteudo-right{
+	/*Novamente definimos a largura da div*/
+	width:500px;
+	/* altura da div */
+	height:400px;
+	/* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px,
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+	float:left;
+	/* Cor de fundo da div */
+
+	border: 5px groove gray;
+
+	}
+	#conteudo-center{
+	/*Novamente definimos a largura da div*/
+	width:500px;
+	/* altura da div */
+	height:400px;
+	/* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px,
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+	float:left;
+	/* Cor de fundo da div */
+
+	border: 5px groove gray;
+
+	}
+#cLogin-empresa{
+	border:1px solid gray;
+	width: 200px;
+	height: 150px;
+}
+
+.center {
+    height: 150px;
+		width: 200px;
+    text-align: center;
+}
+
+fieldset {
+    display: block;
+    margin-left: 60px;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+		height: auto;
+    border: 2px groove;
+		width: auto;
+}
+
+#css_formulario-candidato {
+		border: 2px groove;
+
+}
+
+input, textarea { margin-left: 140px; }
+
+.input-formulario{
+		caret-color: red;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #777777;
+    -moz-box-shadow: 1px 1px 2px #777777;
+    -webkit-box-shadow: 1px 1px 2px #777777;
+    background: #eeeeee;
+    border:1px solid #000000;
+    width:150px
+		padding:10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: -10px;
+		margin-bottom: 20px;
+}
+
+input[type=text]:hover, textarea:hover{
+         background: #ffffff; border:1px solid #990000;
+}
+
+input[type=text]:hover, textarea:hover{
+         background: #ffffff; border:1px solid #990000;
+}
+
+input[type=submit]{
+        background:#006699;
+        color:#ffffff;
+}
+
+
+
+textarea{
+		position: relative;
+    border: 1px solid #000000;
+    background:#eeeeee;
+    width:350px;
+    height:200px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+
+label {
+	 position: absolute; text-align:right; width:130px;
+ }
+label.check, label.radio { position:relative; text-align:left; }
+
+input[radio]{
+	margin-left: 140px;
+
+}
+#cLogin-empresa {
+
+
+}
+/*
+
+
+
+
+*/
