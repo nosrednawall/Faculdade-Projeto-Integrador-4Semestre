@@ -9,7 +9,12 @@ Esse software irá ficar aqui para posterioridade, não temos ainda nenhum motiv
 Projeto Integrador quarto período BSI.
 
 Participantes:
+
 Anderson J. S. Inácio
+
 Everton L. Sausen
+
 Fernando A. Lima
+
 Otávio Augusto
+
