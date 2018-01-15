@@ -1,4 +1,4 @@
-#Trabalhe Conosco Repo
+# Trabalhe Conosco Repo
 
 Esse repositório e a consequência de quatro pessoas que não sabiam nada de PHP,CSS,SITES,APACHE e MYSQL, e com muito esforço conseguiram atingir as metas propostas pelo professor e assim obtiveram nota máxima na matéria.
 
