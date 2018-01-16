@@ -67,18 +67,15 @@
         </div>
           <p><a href="candidato_editar_logado.php" class="btn btn-primary btn-lg btn-block" role="button" >Alterar informações</a></p>
 			</div>
-<!--
+
 			<div class="col-sm-4 col-lg-4">
         <div class="well">
 				      <h3>Historico e Pendencias</h3>
         </div>
           <p><a href="empresa_manter_perguntas.php" class="btn btn-primary btn-lg btn-block" role="button" >Consultar</a></p>
 			</div>
--->
 		</div> <!--/row -->
 	</article>
-
-	<hr>
 	<footer class="footer">
 		<hr>
 		<div class="container">

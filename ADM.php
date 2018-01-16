@@ -42,53 +42,52 @@
 			</div> <!--/container -->
 		</div> <!--jumbotron -->
 		<article class="container "> <!--inicio do article -->
-			<fieldset class="jumbotron"><legend>ADM Manter Candidato</legend>
+			<fieldset class="jumbotron jumbotron-fluid"><legend>ADM Manter Candidato</legend>
 						<div class="row">
 							<div class="col-sm-4"> <!-- inicio das colunas nessa primeira linha-->
 										<!--aqui vai o conteudo de empresa -->
-								<h3 class="">Cadastrar um candidato</h3>
+                                <div class="well"><h3 class="">Cadastrar um candidato</h3></div>
 										<!-- <input type="button" onclick="location.href='empresa_solicitar_contato.html'" value="Solicite contato" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='candidato_cadastrar.php'"role="button">Cadastrar candidato &raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='candidato_cadastrar.php'"role="button">Cadastrar candidato &raquo;</a></p>
 							</div><!--/col -->
 
 							<div class="col-sm-4"> <!-- outra coluna nessa mesma linha-->
 										<!-- aqui vai conteudo candidato-->
-								<h3>Alterar informações ou excluir candidato</h3>
+                                <div class="well"><h3>Alterar informações ou excluir candidato</h3></div>
 										<!-- <input type="button" onclick="location.href='candidato_cadastrar.php'" value="Se cadastre conosco" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='candidato_alterar.php'" role="button">Editar candidatos &raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='candidato_alterar.php'" role="button">Editar candidatos &raquo;</a></p>
 							</div><!--/col -->
 							<div class="col-sm-4"> <!-- outra coluna nessa mesma linha-->
 										<!-- aqui vai conteudo candidato-->
-								<h3>Gerencie candidatos inativados</h3>
+                                <div class="well"><h3>Gerencie candidatos inativados</h3></div>
 										<!-- <input type="button" onclick="location.href='candidato_cadastrar.php'" value="Se cadastre conosco" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='candidato_inativar.php'" role="button">Candidatos Inativos&raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='candidato_inativar.php'" role="button">Candidatos Inativos&raquo;</a></p>
 							</div><!--/col -->
 						</div> <!--/row -->
-
 		</fieldset>
-		<br><br><br><br>
-		<fieldset class="jumbotron"><legend>ADM Manter Empresa</legend>
+		
+		<fieldset class="jumbotron jumbotron-fluid"><legend>ADM Manter Empresa</legend>
 
 						<div class="row"> <!-- incio da linha-->
 							<!-- inicio das colunas nessa primeira linha-->
 							<div class="col-sm-2 col-md-4">
 										<!--aqui vai o conteudo de empresa -->
-								<h3 class="">Manter futuro parceiro e ou adicionar como empresa parceira</h3>
+								<h3>Manter futuro parceiro e ou adicionar como empresa parceira</h3>
 										<!-- <input type="button" onclick="location.href='empresa_solicitar_contato.html'" value="Solicite contato" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='ADM_empresa_manter_futuro_parceiro.php'" role="button">Manter futuro parceiro &raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='ADM_empresa_manter_futuro_parceiro.php'" role="button">Manter futuro parceiro &raquo;</a></p>
 							</div><!--/col -->
 
 							<div class="col-sm-2 col-md-4"> <!-- outra coluna nessa mesma linha-->
 										<!-- aqui vai conteudo candidato-->
 								<h3>Alterar informações ou inativar empresa parceira</h3>
 										<!-- <input type="button" onclick="location.href='candidato_cadastrar.php'" value="Se cadastre conosco" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='ADM_empresa_alterar.php'" role="button">Editar dados empresas &raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='ADM_empresa_alterar.php'" role="button">Editar dados empresas &raquo;</a></p>
 							</div><!--/col -->
 							<div class="col-sm-2 col-md-4"> <!-- outra coluna nessa mesma linha-->
 										<!-- aqui vai conteudo candidato-->
 								<h3>Gerencie empresas inativadas</h3>
 										<!-- <input type="button" onclick="location.href='candidato_cadastrar.php'" value="Se cadastre conosco" /> -->
-								<p><a class="btn btn-primary btn-lg" onclick="location.href='empresa_inativa.php'" role="button">Empresas Inativas&raquo;</a></p>
+								<p><a class="btn btn-primary btn-block active" onclick="location.href='empresa_inativa.php'" role="button">Empresas Inativas&raquo;</a></p>
 							</div><!--/col -->
 						</div> <!--/row -->
 			</fieldset>
