@@ -1,4 +1,4 @@
-#Trabalhe Conosco Repo
+# Trabalhe Conosco Repo
 
 Esse repositório e a consequência de quatro pessoas que não sabiam nada de PHP,CSS,SITES,APACHE e MYSQL, e com muito esforço conseguiram atingir as metas propostas pelo professor e assim obtiveram nota máxima na matéria.
 
@@ -9,7 +9,12 @@ Esse software irá ficar aqui para posterioridade, não temos ainda nenhum motiv
 Projeto Integrador quarto período BSI.
 
 Participantes:
+
 Anderson J. S. Inácio
+
 Everton L. Sausen
+
 Fernando A. Lima
+
 Otávio Augusto
+
