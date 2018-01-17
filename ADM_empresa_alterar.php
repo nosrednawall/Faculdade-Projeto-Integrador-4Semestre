@@ -1,12 +1,6 @@
 <?php
-/*///////////////////////////////////////////////////////////
-////////////adiciona os arquivos para conexao///////////////
-/////////////////////////////////////////////////////////*/
 include_once("_php/conexao.php");
 
-/*///////////////////////////////////////////////////////////
-////////////Faz o select das empresas ativas////////////////
-/////////////////////////////////////////////////////////*/
 $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO` = 'ATIVO' "); // using mysqli_query instead
 ?>
 
@@ -59,7 +53,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO`
 	            <table width='80%' border=0 class="table-striped">  <!--  inicio da tabela-->
 	                <tr bgcolor='#CCCCCC'>
 											<td>#</td>
-	                    <td>Razao social</td>
+	                    <td>Pessoa Juridica</td>
 	                    <td>CNPJ</td>
 	                    <td>Nome Fantasia</td>
 	                    <td>E-mail</td>
