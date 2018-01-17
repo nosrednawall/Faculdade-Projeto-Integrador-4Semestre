@@ -169,7 +169,7 @@ while($res = mysqli_fetch_array($result))
 			<footer class="footer">
 				<hr>
 				<div class="container">
-					<p class="text-muted">&copy; 2017 Trabalhe Conosco todos os direitos reservados</p>
+					<p class="text-muted">&copy; 2018 Trabalhe Conosco todos os direitos reservados</p>
 				</div>
 			</footer>
 			<!-- Bootstrap core JavaScript

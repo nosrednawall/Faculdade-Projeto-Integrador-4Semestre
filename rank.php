@@ -46,7 +46,7 @@
 
     <footer>
 
-      <p>Trabalhe Conosco Todos os direitos Reservados 2017</p>
+      <p>Trabalhe Conosco Todos os direitos Reservados 2018</p>
 
     </footer>
 
