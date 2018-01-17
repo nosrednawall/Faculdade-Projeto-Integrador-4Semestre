@@ -1,12 +1,6 @@
 <?php
-/*///////////////////////////////////////////////////////////
-////////////adiciona os arquivos para conexao///////////////
-/////////////////////////////////////////////////////////*/
 include_once("_php/conexao.php");
 
-/*///////////////////////////////////////////////////////////
-////////////Faz o select das empresas ativas////////////////
-/////////////////////////////////////////////////////////*/
 $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO` = 'ATIVO' "); // using mysqli_query instead
 ?>
 
@@ -58,13 +52,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO`
     <article class="container">  <!--inicio do artigo  -->
 	            <table width='80%' border=0 class="table-striped">  <!--  inicio da tabela-->
 	                <tr bgcolor='#CCCCCC'>
-											<td>#</td>
-	                    <td>Razao social</td>
+						<td>#</td>
+	                    <td>Pessoa Juridica</td>
 	                    <td>CNPJ</td>
 	                    <td>Nome Fantasia</td>
 	                    <td>E-mail</td>
-											<td>Status</td>
-											<td>Ações</td>
+				        <td>Status</td>
+						<td>Ações</td>
 	                </tr>
 	                <?php
 									/*///////////////////////////////////////////////////////////
@@ -72,15 +66,15 @@ $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO`
 									/////////////////////////////////////////////////////////*/
 	                    while($res = mysqli_fetch_array($result)) {
 	                        echo "<tr>";
-														echo "<td>".$res['ID_EMPRESA']."</td>";
-		                        echo "<td>".$res['RAZAO_SOCIAL']."</td>";
-		                        echo "<td>".$res['CNPJ']."</td>";
-		                        echo "<td>".$res['NOME_FANTASIA']."</td>";
-														echo "<td>".$res['EMAIL']."</td>";
-														echo "<td>".$res['STATUS_CADASTRO']."</td>";
-														echo "<td><a href=\"ADM_empresa_editar.php?ID=$res[ID_EMPRESA]\" class=\"btn btn-xs btn-warning\" role=\"button\">Alterar</a> | <a href=\"_php/manter-empresa/inativa_empresa.php?ID=$res[ID_EMPRESA]\" class=\"btn btn-xs btn-danger\" role=\"button\" onClick=\"return confirm('Você tem certeza que deseja inativar essa empresa?')\">	Inativar</a></td>";
-													echo "</tr>";
-	                    }
+                                echo "<td>".$res['ID_EMPRESA']."</td>";
+                                echo "<td>".$res['RAZAO_SOCIAL']."</td>";
+                                echo "<td>".$res['CNPJ']."</td>";
+                                echo "<td>".$res['NOME_FANTASIA']."</td>";
+                                echo "<td>".$res['EMAIL']."</td>";
+                                echo "<td>".$res['STATUS_CADASTRO']."</td>";
+                                echo "<td><a href=\"ADM_empresa_editar.php?ID=$res[ID_EMPRESA]\" class=\"btn btn-xs btn-warning\" role=\"button\">Alterar</a> | <a href=\"_php/manter-empresa/inativa_empresa.php?ID=$res[ID_EMPRESA]\" class=\"btn btn-xs btn-danger\" role=\"button\" onClick=\"return confirm('Você tem certeza que deseja inativar essa empresa?')\">	Inativar</a></td>";
+                            echo "</tr>";
+}
 	                ?>
 	            </table> <!-- fim da tabela -->
 		</article> <!-- fim do artigo -->
@@ -92,6 +86,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO`
 				<p class="text-muted">&copy; 2017 Trabalhe Conosco todos os direitos reservados</p>
 			</div>
 		</footer>
+
 
 		<!-- Bootstrap core JavaScript
 	================================================== -->
