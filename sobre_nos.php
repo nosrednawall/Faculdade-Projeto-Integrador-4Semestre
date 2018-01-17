@@ -44,6 +44,7 @@
 	<article class="container">
 		<div class="row">
 			<div class="col-sm-4 col-md-4 col-lg-8">
+                <img src="_images/nosrednawall.jpg" alt="Smiley face" width="600" height="588">
 				<p>Somos um grupo de estudantes, no quarto período da faculdade.</p>
 				<p>Estamos desenvolvendo esse site como um projeto para a diciplina do projeto integrador</p>
 			</div>
