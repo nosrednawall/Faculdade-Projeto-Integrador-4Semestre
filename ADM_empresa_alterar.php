@@ -86,6 +86,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `EMPRESA` WHERE `STATUS_CADASTRO`
 		</article> <!-- fim do artigo -->
 		<hr>
 		<footer class="footer">
+            <!-- esse e o rodape e nao pode ser removido -->
 			<hr>
 			<div class="container">
 				<p class="text-muted">&copy; 2017 Trabalhe Conosco todos os direitos reservados</p>
