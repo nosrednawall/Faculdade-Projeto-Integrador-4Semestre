@@ -1,3 +1,6 @@
+<?php
+$id = $_GET['ID'];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:id="http://www.w3.org/1999/xhtml">
 <head> <!-- Inicio do cabeçalho -->
