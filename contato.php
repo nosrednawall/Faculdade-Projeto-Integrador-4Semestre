@@ -76,6 +76,7 @@
 		<hr>
 		<div class="container">
 			<p class="text-muted">&copy; 2018 Trabalhe Conosco todos os direitos reservados</p>
+			<p class="text-muted">&copy; 2040 Trabalhe Conosco todos os direitos reservados</p>
 	 	</div>
 	</footer>
 					    <!-- Bootstrap core JavaScript
